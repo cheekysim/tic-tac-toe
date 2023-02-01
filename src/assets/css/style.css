@@ -1,0 +1,65 @@
+:root {
+    --color-primary: hsl(0, 0%, 15%);
+    --color-secondary: hsl(0, 0%, 20%);
+    --color-tertiary: hsl(286, 100%, 35%);
+    --color-text: hsl(0, 0%, 80%);
+    font-size: 62.5%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: var(--color-primary);
+    color: var(--color-text);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+.grid {
+    width: 75%;
+    height: auto;
+    aspect-ratio: 1;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.grid-item {
+    border: 0.5rem solid var(--color-tertiary);
+    border-radius: 1rem;
+    background: transparent;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    transition: 0.5s all ease-in;
+}
+
+.o {
+    background: url(../images/o.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-color: #0066FF;
+}
+
+.x {
+    background: url(../images/x.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-color: #FF0000;
+}

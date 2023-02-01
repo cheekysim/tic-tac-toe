@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+  <title>Hello World!</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+  <script src="assets/js/index.js" defer></script>
+  <h1>Tic Tac Toe</h1>
+  <div class="grid">
+    <button class="grid-item row1 col1 diag1" active="true"></button>
+    <button class="grid-item row1 col2" active="true"></button>
+    <button class="grid-item row1 col3 diag2" active="true"></button>
+    <button class="grid-item row2 col1" active="true"></button>
+    <button class="grid-item row2 col2 diag1 diag2" active="true"></button>
+    <button class="grid-item row2 col3" active="true"></button>
+    <button class="grid-item row3 col1 diag2" active="true"></button>
+    <button class="grid-item row3 col2" active="true"></button>
+    <button class="grid-item row3 col3 diag1" active="true"></button>
+  </div>
+  <h1 id="turn">X's Turn</h1>
+</body>
+
+</html>
