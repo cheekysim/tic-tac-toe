@@ -4,7 +4,8 @@ const path = require('path')
 function createWindow() {
     const win = new BrowserWindow({
         width: 800,
-        height: 800
+        height: 800,
+        autoHideMenuBar: true
     });
 
     win.loadFile('src/index.html');

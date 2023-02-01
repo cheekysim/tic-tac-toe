@@ -4,13 +4,16 @@
   "description": "Tic Tac Toe Built With Electron",
   "main": "index.js",
   "scripts": {
-    "start": "electron .",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "electron-forge start",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "package": "electron-forge package",
+    "make": "electron-forge make"
   },
   "author": "cheekysim",
   "license": "ISC",
   "devDependencies": {
     "@electron-forge/cli": "^6.0.4",
     "electron": "^22.1.0"
-  }
+  },
+  "dependencies": {}
 }

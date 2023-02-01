@@ -48,6 +48,11 @@ h1 {
     transition: 0.5s all ease-in;
 }
 
+.grid-item:focus-visible {
+    outline: none;
+    background-color: var(--color-secondary);
+}
+
 .o {
     background: url(../images/o.svg);
     background-size: cover;
